@@ -7,3 +7,6 @@ import random
 def models_list(request):
     random_number = random.randint(1, 100)
     return HttpResponse(f"Random number {random_number}")
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
